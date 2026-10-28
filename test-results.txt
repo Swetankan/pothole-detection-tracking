@@ -1,0 +1,23 @@
+...........{"provisional_unique": 1, "confirmed": 1, "depth_values_supplied": 1, "accuracy": "Not evaluated: no independent ground truth", "min_observations": 3}
+.{"provisional_unique": 0, "confirmed": 0, "depth_values_supplied": 0, "accuracy": "Not evaluated: no independent ground truth", "min_observations": 3}
+.2026-10-28 13:16:36.006 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-10-28 13:16:36.696 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-10-28 13:16:37.256 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-10-28 13:16:37.273 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+.
+----------------------------------------------------------------------
+Ran 14 tests in 1.768s
+
+OK

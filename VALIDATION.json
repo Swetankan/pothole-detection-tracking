@@ -1,0 +1,81 @@
+{
+  "stage": "pretrained baseline; not fine-tuned",
+  "models_compared": [
+    {
+      "model": "keremberke/yolov8m-pothole-segmentation",
+      "frames": [
+        0,
+        100,
+        300,
+        500
+      ],
+      "threshold": 0.05,
+      "detections": [
+        1,
+        3,
+        0,
+        0
+      ],
+      "selected": false
+    },
+    {
+      "model": "Samdutse/pothole-yolov8",
+      "frames": [
+        0,
+        100,
+        300,
+        500
+      ],
+      "threshold": 0.2,
+      "detections": [
+        9,
+        15,
+        6,
+        5
+      ],
+      "selected": false
+    },
+    {
+      "model": "DanielsStulpe/pothole-detection/yolo26_best.pt",
+      "frames": [
+        0,
+        100,
+        300,
+        500
+      ],
+      "threshold": 0.25,
+      "detections": [
+        14,
+        10,
+        2,
+        3
+      ],
+      "selected": true
+    }
+  ],
+  "caveat": "Thresholds differ; detection counts are diagnostic only, not comparable accuracy metrics. Selection was qualitative on development footage. No independent ground truth was supplied.",
+  "actual_run": {
+    "confidence_threshold": 0.3,
+    "image_size": 960,
+    "mask_model": "MobileSAM",
+    "mask_refresh_frames": 5,
+    "device": "cpu",
+    "frames": 692,
+    "runtime_seconds_inference": 933.99,
+    "export_min_observations": 10
+  },
+  "validation": {
+    "unit_and_integration_tests": 14,
+    "passed": 14,
+    "covers": [
+      "camera-motion association",
+      "identity separation",
+      "gap expiry",
+      "merge validation",
+      "manual depth validation",
+      "mask correction validation",
+      "video export",
+      "review app save interaction"
+    ]
+  }
+}
